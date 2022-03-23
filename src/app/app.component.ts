@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Card';
+  public attr = {id: 'one'}
+
+  public onClick(){
+    if(this.attr.id === 'one'){
+      this.attr= {id:'two'}
+    }
+    else{
+      this.attr= {id:'one'}
+    }
+  }
 }
