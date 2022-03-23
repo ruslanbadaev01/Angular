@@ -1,5 +1,6 @@
-<router-outlet></router-outlet>
 
-  <h1>hello world</h1>
 
-  <app-card></app-card>
+  <p appDIr [appDir]="attr">Direct</p>
+
+  <button (click)="onClick()">change</button>
+  <router-outlet></router-outlet>
